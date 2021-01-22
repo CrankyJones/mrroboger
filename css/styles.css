@@ -1,0 +1,13 @@
+.form-group {
+  margin-top: 50px;
+}
+
+.greetingBody {
+  margin: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  border-color: 5px, solid black;
+}
+.btn {
+  margin-top: 25px;
+}

@@ -16,7 +16,7 @@ function roboger(name, input) {
         numList.push(i);
       }
     }
-    numList.join(" , ");
+    numList.join(" ");
     return numList;
   }
 }
@@ -28,6 +28,17 @@ $(document).ready(function () {
     const input = $('#userInput').val();
     const name = $('#userName').val();
     const output = roboger(name, input);
+    let modal = document.getElementsById("greetingsModal");
+    let closeX = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+    closeX.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
     $("#greeting").text(output);
   });
 });
