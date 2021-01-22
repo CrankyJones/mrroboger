@@ -41,7 +41,7 @@ h1 {
   padding: 25px;
 }
 
-.mrR {
+#mrR {
   border-radius: 25%;
 }
 .close {
@@ -55,13 +55,14 @@ h1 {
   color:black;
   cursor: pointer;
 }
+
 @keyframes modalBgChange {
   from {background-color:lightblue}
   to {background-color: burlywood;}
 }
 
 @keyframes circleAnimation {
-  from {background-color: rgba(0,0,0,0.0);}
+  from {background-color: black;}
   to {background-color: crimson;}
 }
 #circle1{
@@ -69,9 +70,21 @@ h1 {
   height: 5px;
   width: 5px;
   display: block;
-  background-color: crimson;
+  object-position: 5px;
+
   animation-name: circleAnimation;
   animation-delay: 5s;
-  animation-duration: 10;
+  animation-duration: 10s;
+
+}
+
+#circle2 {
+  position: absolute;
+  background-color: crimson;
+  transition: 3s;
+  opacity: 0%;
+}
+#circle2:hover .overlay {
+  opacity: 1;
 
 }
