@@ -60,7 +60,7 @@ h1 {
   from {background-color:lightblue}
   to {background-color: burlywood;}
 }
-
+/*
 @keyframes circleAnimation {
   from {background-color: rgb(0,0,0,0.01);}
   to {background-color: crimson;}
@@ -75,7 +75,7 @@ h1 {
   animation-name: circleAnimation;
   animation-duration: 10s;
   position: absolute;
-  bottom: 292px;
+  top: 375px;
   left: 543px;
 }
 #fridayRight{
@@ -88,7 +88,7 @@ h1 {
   animation-name: circleAnimation;
   animation-duration: 10s;
   position: absolute;
-  bottom: 290px;
+  top: 290px;
   left: 563px;
 }
 #rogersLeft{
@@ -100,7 +100,7 @@ h1 {
   object-position: 5px;
   animation-name: circleAnimation;
   animation-duration: 10s;
-  position: relative;
+  position: absolute;
   bottom: 319px;
   left: 601px;
 }
@@ -113,7 +113,8 @@ h1 {
   object-position: 5px;
   animation-name: circleAnimation;
   animation-duration: 10s;
-  position: relative;
+  position: absolute;
   bottom: 321px;
-  left: 635px;
+  left: 634px;
 }
+*/
