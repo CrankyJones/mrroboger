@@ -24,9 +24,10 @@ function roboger(name, input) {
 $(document).ready(function () {
   $('#form').submit(function (event) {
     event.preventDefault();
+   // $("#greeting").hide();
     const input = $('#userInput').val();
     const name = $('#userName').val();
     const output = roboger(name, input);
-    alert(output);
+    $("#greeting").text(output);
   });
 });
