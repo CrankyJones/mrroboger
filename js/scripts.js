@@ -21,6 +21,10 @@ function roboger(name, input) {
   }
 }
 
+function inputCheck(input, inputId){
+    
+}
+
 
 
 $(document).ready(function () {
@@ -29,6 +33,7 @@ $(document).ready(function () {
    // $("#greeting").hide();
     const input = $('#userInput').val();
     const name = $('#userName').val();
+    if 
     const output = roboger(name, input);
     let modal = document.getElementById("greetingsModal");
     let closeX = document.getElementsByClassName("close")[0];

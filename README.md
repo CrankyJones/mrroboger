@@ -49,9 +49,15 @@ Test: When a user entered number containsa  1 replace that number with "Beep!" (
 Expect roboger(3).toEqual(0,Boop!,Boop!, Won't you be my neigh-bot?)  
 
 #### *Test 5*
-Describe: roboger(,)   
+Describe: roboger(nameInput,numberInput)   
 Test: When the user enters there name it will appear at the end on Won't you be my neigh-bot, [name]?   
 Expect roboger(name,3).toEqual((0,Boop!,Boop!, Won't you be my neigh-bot, [name]?))
+
+#### *Test 6*
+Describe: inputCheck(element, form)
+Test: To check whether or not the correct input type was received
+Expect inputCheck(Fred, inputName).toEqual(true)
+
 
 ### **License**
 [MIT](https://opensource.org/licenses/MIT)
