@@ -28,33 +28,32 @@ $(document).ready(function () {
     const input = parseInt($('#userInput').val());
     const name = $('#userName').val();
     const output = roboger(name, input);
-    if {
+    if ('name'.isdigit == false) {
       let modal = document.getElementById("greetingsModal");
       let closeX = document.getElementsByClassName("close")[0];
       modal.style.display = "block";
-      closeX.onclick = function() {
+      closeX.onclick = function () {
         modal.style.display = "none";
       }
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }        
+      }
       $("#greeting").text(output);
-      
+
     } else {
       let modal = document.getElementById("robotModal");
       let closeX = document.getElementsByClassName("close")[0];
       modal.style.display = "block";
-      closeX.onclick = function() {
+      closeX.onclick = function () {
         modal.style.display = "none";
       }
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }        
-      $("#greeting").text(output);
+      }
     }
   });
 });

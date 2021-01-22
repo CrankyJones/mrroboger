@@ -36,12 +36,27 @@ h1 {
   border: 2px solid black;
   width: 60%;
 }
+.robotBody{
+  text-align: center;
+  font-family: fantasy;
+  font-size: x-large;
+  animation: modalKingF 4s infinite;
+  background-color: red;
+  color: black;
+  margin: 20% auto;
+  padding: 25px;
+  border: 2px solid black;
+  width: 60%;
+}
 .greetingBodyText{
   margin: 25px;
   padding: 25px;
 }
 
 #mrR {
+  border-radius: 25%;
+}
+#kingF {
   border-radius: 25%;
 }
 .close {
@@ -60,61 +75,7 @@ h1 {
   from {background-color:lightblue}
   to {background-color: burlywood;}
 }
-/*
-@keyframes circleAnimation {
-  from {background-color: rgb(0,0,0,0.01);}
-  to {background-color: crimson;}
+
+@keyframes modalKingBg {
+  50% {background-color: orange;}
 }
-#fridayLeft{
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  display: block;
-  background-color: crimson;
-  object-position: 5px;
-  animation-name: circleAnimation;
-  animation-duration: 10s;
-  position: absolute;
-  top: 375px;
-  left: 543px;
-}
-#fridayRight{
-  border-radius: 50%;
-  height: 4px;
-  width: 4px;
-  display: block;
-  background-color: crimson;
-  object-position: 5px;
-  animation-name: circleAnimation;
-  animation-duration: 10s;
-  position: absolute;
-  top: 290px;
-  left: 563px;
-}
-#rogersLeft{
-  border-radius: 50%;
-  height: 4px;
-  width: 5px;
-  display: block;
-  background-color: crimson;
-  object-position: 5px;
-  animation-name: circleAnimation;
-  animation-duration: 10s;
-  position: absolute;
-  bottom: 319px;
-  left: 601px;
-}
-#rogersRight{
-  border-radius: 50%;
-  height: 4px;
-  width: 5px;
-  display: block;
-  background-color: crimson;
-  object-position: 5px;
-  animation-name: circleAnimation;
-  animation-duration: 10s;
-  position: absolute;
-  bottom: 321px;
-  left: 634px;
-}
-*/
