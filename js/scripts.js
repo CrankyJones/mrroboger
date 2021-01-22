@@ -21,32 +21,43 @@ function roboger(name, input) {
   }
 }
 
-function inputCheck(input, inputId){
-    
-}
-
-
 
 $(document).ready(function () {
   $('#form').submit(function (event) {
     event.preventDefault();
-   // $("#greeting").hide();
-    const input = $('#userInput').val();
+    const input = parseInt($('#userInput').val());
     const name = $('#userName').val();
-    if 
     const output = roboger(name, input);
-    let modal = document.getElementById("greetingsModal");
-    let closeX = document.getElementsByClassName("close")[0];
-    modal.style.display = "block";
-    closeX.onclick = function() {
-      modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modal) {
+    if {
+      let modal = document.getElementById("greetingsModal");
+      let closeX = document.getElementsByClassName("close")[0];
+      modal.style.display = "block";
+      closeX.onclick = function() {
         modal.style.display = "none";
       }
-    }        
-    $("#greeting").text(output);
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }        
+      $("#greeting").text(output);
+      
+    } else {
+      let modal = document.getElementById("robotModal");
+      let closeX = document.getElementsByClassName("close")[0];
+      modal.style.display = "block";
+      closeX.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }        
+      $("#greeting").text(output);
+    }
   });
 });
+
+
 
