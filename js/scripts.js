@@ -16,8 +16,8 @@ function roboger(name, input) {
         numList.push(i);
       }
     }
-    numList.join(" ");
-    return numList;
+    let numReturn = numList.join(', ');
+    return numReturn;
   }
 }
 
