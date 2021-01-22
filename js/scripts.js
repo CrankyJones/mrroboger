@@ -21,14 +21,23 @@ function roboger(name, input) {
   }
 }
 
+function nameChk(input) {
+  if (/[^0-9]/.test(input)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+function numChk(input) {}
+
 
 $(document).ready(function () {
   $('#form').submit(function (event) {
     event.preventDefault();
     const input = parseInt($('#userInput').val());
     const name = $('#userName').val();
-    const output = roboger(name, input);
-    if (name.isdigit === false) {
+    
+    if (nameChk(name) == false) {
       let modal = document.getElementById("greetingsModal");
       let closeX = document.getElementsByClassName("closeX")[0];
       modal.style.display = "block";
@@ -40,9 +49,10 @@ $(document).ready(function () {
           modal.style.display = "none";
         }
       }
+      const output = roboger(name, input);
       $("#greeting").text(output);
 
-    } else {
+    } else if {
       let modal = document.getElementById("robotModal");
       let closeX = document.getElementsByClassName("closeX2")[0];
       modal.style.display = "block";

@@ -54,9 +54,9 @@ Test: When the user enters there name it will appear at the end on Won't you be 
 Expect roboger(name,3).toEqual((0,Boop!,Boop!, Won't you be my neigh-bot, [name]?))
 
 #### *Test 6*
-Describe: inputCheck(element, form)
+Describe: inputCheck(element)
 Test: To check whether or not the correct input type was received
-Expect inputCheck(Fred).toEqual(true)
+Expect inputChk(Fred).toEqual(true)
 
 
 ### **License**
