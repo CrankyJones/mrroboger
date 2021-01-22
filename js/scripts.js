@@ -21,6 +21,8 @@ function roboger(name, input) {
   }
 }
 
+
+
 $(document).ready(function () {
   $('#form').submit(function (event) {
     event.preventDefault();
@@ -28,7 +30,7 @@ $(document).ready(function () {
     const input = $('#userInput').val();
     const name = $('#userName').val();
     const output = roboger(name, input);
-    let modal = document.getElementsById("greetingsModal");
+    let modal = document.getElementById("greetingsModal");
     let closeX = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
     closeX.onclick = function() {
@@ -38,7 +40,8 @@ $(document).ready(function () {
       if (event.target == modal) {
         modal.style.display = "none";
       }
-    }
+    }        
     $("#greeting").text(output);
   });
 });
+
