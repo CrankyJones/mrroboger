@@ -2,7 +2,7 @@ function roboger(name, input) {
   let numList = [];
   for (let i = 0; i <= input; i++) {
     if (/[3]/.test(i)) {
-      numList.push("Won\'t you be my neigh-bot, "(name)"?");
+      numList.push("Won\'t you be my neigh-bot, " + name +"?");
     } else if (/[2]/.test(i)) {
       numList.push("Boop!");
     } else if (/[1]/.test(i)) {
