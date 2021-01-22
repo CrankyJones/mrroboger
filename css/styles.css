@@ -65,7 +65,7 @@ h1 {
   from {background-color: rgb(0,0,0,0.01);}
   to {background-color: crimson;}
 }
-#circle1{
+#fridayLeft{
   border-radius: 50%;
   height: 5px;
   width: 5px;
@@ -74,15 +74,46 @@ h1 {
   object-position: 5px;
   animation-name: circleAnimation;
   animation-duration: 10s;
-}
-
-#circle2 {
   position: absolute;
-  background-color: crimson;
-  transition: 3s;
-  opacity: 0%;
+  bottom: 292px;
+  left: 543px;
 }
-#circle2:hover .overlay {
-  opacity: 1;
-
+#fridayRight{
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  display: block;
+  background-color: crimson;
+  object-position: 5px;
+  animation-name: circleAnimation;
+  animation-duration: 10s;
+  position: absolute;
+  bottom: 290px;
+  left: 563px;
+}
+#rogersLeft{
+  border-radius: 50%;
+  height: 4px;
+  width: 5px;
+  display: block;
+  background-color: crimson;
+  object-position: 5px;
+  animation-name: circleAnimation;
+  animation-duration: 10s;
+  position: relative;
+  bottom: 319px;
+  left: 601px;
+}
+#rogersRight{
+  border-radius: 50%;
+  height: 4px;
+  width: 5px;
+  display: block;
+  background-color: crimson;
+  object-position: 5px;
+  animation-name: circleAnimation;
+  animation-duration: 10s;
+  position: relative;
+  bottom: 321px;
+  left: 635px;
 }
