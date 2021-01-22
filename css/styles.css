@@ -27,8 +27,7 @@ h1 {
   text-align: center;
   font-family: fantasy;
   font-size: x-large;
-  animation-name: modalBgChange;
-  animation-duration: 12s;
+  animation: modalBgChange 12s;
   background-color: burlywood;
   color: black;
   margin: 20% auto;
@@ -40,8 +39,10 @@ h1 {
   text-align: center;
   font-family: fantasy;
   font-size: x-large;
-  animation: modalKingF 4s infinite;
-  background-color: red;
+  animation: modalKingBg 10s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  background-color: lightblue;
   color: black;
   margin: 20% auto;
   padding: 25px;
@@ -59,14 +60,25 @@ h1 {
 #kingF {
   border-radius: 25%;
 }
-.close {
+.closeX {
   color: darkgrey;
   float: right;
   font-size: 28px;
   font-family: 'Times New Roman', Times, serif;
 }
-.close:hover,
-.close:focus {
+.closeX:hover,
+.closeX:focus {
+  color:black;
+  cursor: pointer;
+}
+.closeX2 {
+  color: darkgrey;
+  float: right;
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.closeX2:hover,
+.closeX2:focus {
   color:black;
   cursor: pointer;
 }
@@ -77,5 +89,6 @@ h1 {
 }
 
 @keyframes modalKingBg {
-  50% {background-color: orange;}
+  from {background-color: lightblue;}
+  to {background-color: red;}
 }

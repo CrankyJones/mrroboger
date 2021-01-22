@@ -28,9 +28,9 @@ $(document).ready(function () {
     const input = parseInt($('#userInput').val());
     const name = $('#userName').val();
     const output = roboger(name, input);
-    if ('name'.isdigit == false) {
+    if (name.isdigit === false) {
       let modal = document.getElementById("greetingsModal");
-      let closeX = document.getElementsByClassName("close")[0];
+      let closeX = document.getElementsByClassName("closeX")[0];
       modal.style.display = "block";
       closeX.onclick = function () {
         modal.style.display = "none";
@@ -44,7 +44,7 @@ $(document).ready(function () {
 
     } else {
       let modal = document.getElementById("robotModal");
-      let closeX = document.getElementsByClassName("close")[0];
+      let closeX = document.getElementsByClassName("closeX2")[0];
       modal.style.display = "block";
       closeX.onclick = function () {
         modal.style.display = "none";
