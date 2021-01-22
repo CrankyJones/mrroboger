@@ -28,15 +28,25 @@ h1 {
   font-family: fantasy;
   font-size: x-large;
   animation-name: modalBgChange;
-  
   animation-duration: 12s;
+  background-color: burlywood;
   color: black;
   margin: 20% auto;
   padding: 25px;
   border: 2px solid black;
   width: 60%;
 }
-
+.close {
+  color: darkgrey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color:black;
+  cursor: pointer;
+}
 @keyframes modalBgChange {
   from {background-color: brown;}
   to {background-color: burlywood;}
