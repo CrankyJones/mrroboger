@@ -10,7 +10,7 @@ A demonstration of JavaScript and JQuery using loops and arrays with styling usi
 * Bootstrap
 
 ### **Description**
-This project is a web page that takes a number enterd by the user and returns a greeting from Mr. Roboger. It displays all numbers from 0 to the number entered. It uses regular expressions to find numbers that are or contain a 3, 2, or 1, and it replaces them with text.
+This project is a web page that takes a number enterd by the user and returns a greeting from Mr. Roboger. It displays all numbers from 0 to the number entered. It uses regular expressions to find numbers that are or contain a 3, 2, or 1, and it replaces them with text. Leaving either fields blank will pop up alerts. If a name and number is correctly entered, a greeting from Mr. Roboger will be displayed. If a letter is entered first in the number field, an alert will pop up reminding you to enter a number. If a number is entered into the name field, a secret robot message from King Friday will appear.
 
 
 ### **Setup/Installation**
@@ -54,9 +54,9 @@ Test: When the user enters there name it will appear at the end on Won't you be 
 Expect roboger(name,3).toEqual((0,Boop!,Boop!, Won't you be my neigh-bot, [name]?))
 
 #### *Test 6*
-Describe: inputCheck(element)
-Test: To check whether or not the correct input type was received
-Expect inputChk(Fred).toEqual(true)
+Describe: inputCheck(element)   
+Test: To check whether or not the correct input type of the first character was received   
+Expect inputChk(Fred).toEqual(true)   
 
 
 ### **License**

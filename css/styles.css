@@ -1,5 +1,5 @@
 body{
-  background-color: thistle;
+  background-color: rgb(191, 216, 211);
 }
 h1 {
   margin-top: 30px;
@@ -10,6 +10,7 @@ h1 {
   font-size: larger;
 }
 .neighborhood {
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -17,10 +18,17 @@ h1 {
   
 }
 .form-group {
-  margin-top: 50px;
+  margin-top: 35px;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .btn {
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .modal {
   display: none;
@@ -63,7 +71,6 @@ h1 {
   margin: 25px;
   padding: 25px;
 }
-
 #mrR {
   border-radius: 25%;
 }
@@ -92,12 +99,10 @@ h1 {
   color:black;
   cursor: pointer;
 }
-
 @keyframes modalBgChange {
   from {background-color:lightblue}
   to {background-color: burlywood;}
 }
-
 @keyframes modalKingBg {
   from {background-color: lightblue;}
   to {background-color: red;}

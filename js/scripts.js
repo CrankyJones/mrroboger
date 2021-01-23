@@ -16,7 +16,7 @@ function roboger(name, input) {
         numList.push(i);
       }
     }
-    let numReturn = numList.join(', ');
+    const numReturn = numList.join(', ');
     return numReturn;
   }
 }
@@ -28,22 +28,20 @@ function nameChk(input) {
     return false;
   }
 }
+
 function numChk(input) {
   if (/[0-9]/.test(input)) {
     return true;
-  } else{
+  } else {
     alert("Please enter a number.");
   }
-  }
-
-
+}
 
 $(document).ready(function () {
   $('#form').submit(function (event) {
     event.preventDefault();
     const input = parseInt($('#userInput').val());
     const name = $('#userName').val();
-    
     if (nameChk(name) == true && numChk(input) == true) {
       let modal = document.getElementById("greetingsModal");
       let closeX = document.getElementsByClassName("closeX")[0];
@@ -58,7 +56,6 @@ $(document).ready(function () {
       }
       const output = roboger(name, input);
       $("#greeting").text(output);
-
     } else if (nameChk(name) == false) {
       let modal = document.getElementById("robotModal");
       let closeX = document.getElementsByClassName("closeX2")[0];
@@ -71,7 +68,7 @@ $(document).ready(function () {
           modal.style.display = "none";
         }
       }
-    } else{}
+    }
   });
 });
 
